@@ -5,11 +5,10 @@ import sistema_banco
 
 
 class MyModuleTest(unittest.TestCase):
-
 	def teste_calc1(self):
 		self.assertEqual(sistema_banco.Criacao_conta(["1", "12312312325", "Lucas", "1234"]), "Usuário cadastrado com sucesso")
-    def teste_calc12(self):
-        self.assertEqual(sistema_banco.Deletar_conta(["12312312325", "1234"]), "Conta deletada com sucesso")
+	def teste_calc12(self):
+		self.assertEqual(sistema_banco.Deletar_conta(["12312312325", "1234"]), "Conta deletada com sucesso")
 	def teste_calc13(self):
 		self.assertEqual(sistema_banco.Alterar_limite(["12312312325", "1234"]), "Limite alterado com sucesso")
 	def teste_calc14(self):
